@@ -10,7 +10,7 @@ Ce projet consiste à construire un modèle de réseau de neurones artificiels p
 ## 📌 Objectifs
 
 - Concevoir un modèle d’apprentissage supervisé à l’aide de TensorFlow/Keras
-- Utiliser **au moins 6 perceptrons (couches Dense)** dans l’architecture du réseau
+- Utiliser **6 perceptrons (couches Dense)** dans l’architecture du réseau
 - Classer 10 types de vêtements différents
 - Afficher la **classe prédite** à partir d’une image choisie
 
