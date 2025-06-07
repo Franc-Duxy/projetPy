@@ -1,3 +1,4 @@
+
 import tensorflow as tf
 from tensorflow.keras.datasets import fashion_mnist
 from tensorflow.keras.models import Sequential
@@ -23,12 +24,15 @@ x_test = x_test / 255.0
 y_train_cat = to_categorical(y_train, 10)
 y_test_cat = to_categorical(y_test, 10)
 
-# Création du modèle
+# Création du modèle avec perceptrons
 model = Sequential([
     Flatten(input_shape=(28, 28)),
-    Dense(128, activation='relu'),
-    Dense(64, activation='relu'),
-    Dense(10, activation='softmax')
+    Dense(128, activation='relu'),  # Perceptron 1
+    Dense(96, activation='relu'),   # Perceptron 2
+    Dense(64, activation='relu'),   # Perceptron 3
+    Dense(48, activation='relu'),   # Perceptron 4
+    Dense(32, activation='relu'),   # Perceptron 5
+    Dense(10, activation='softmax') # Perceptron 6
 ])
 
 # Compilation
